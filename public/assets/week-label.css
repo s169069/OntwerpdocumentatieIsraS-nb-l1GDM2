@@ -1,0 +1,4 @@
+/* Week label hover effect when image above is hovered */
+li:hover .week-label {
+  opacity: 0.5;
+}

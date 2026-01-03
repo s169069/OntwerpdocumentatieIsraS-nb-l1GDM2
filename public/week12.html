@@ -1,0 +1,352 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML & CSS</title>
+
+	<!-- Link to your CSS file -->
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="assets/flexboxes.css">
+	<link rel="stylesheet" href="assets/nav.css">
+	<link rel="stylesheet" href="assets/typography.css">
+	<!-- Google Fonts: Roboto Slab -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+	<!-- Google Fonts: Suwannaphum -->
+	<link href="https://fonts.googleapis.com/css2?family=Suwannaphum:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- GitHub Repository Link -->
+	<div style="position:fixed;top:10px;right:10px;z-index:9999;background:#fff;padding:6px 12px;border-radius:6px;box-shadow:0 2px 8px #0002;font-size:1em;">
+		<a href="https://github.com/s169069/GithubCodes_IsraS-nb-l1GDM2" target="_blank" rel="noopener noreferrer" style="color:#24292f;text-decoration:none;font-weight:bold;">
+			View on GitHub
+		</a>
+	</div>
+		<style>
+									@media (max-width: 700px) {
+										#week12-link h2 {
+											font-size: 2.1em !important;
+										}
+										.logbook-link .arrow {
+											font-size: 1.1em !important;
+										}
+									}
+									@media (max-width: 500px) {
+										#week12-link h2 {
+											font-size: 1.5em !important;
+										}
+										.logbook-link .arrow {
+											font-size: 1em !important;
+										}
+									}
+						@media (max-width: 700px) {
+							.title span {
+								font-size: 1.1em !important;
+							}
+						}
+						@media (max-width: 500px) {
+							.title span {
+								font-size: 1em !important;
+							}
+						}
+			body, .container, .title, .red-rectangle, h1, h2, p, .column, .logbook-link {
+				font-family: Arial, Helvetica, sans-serif !important;
+			}
+		</style>
+		<style>
+			.responsive-train-img {
+				width: 100vw;
+				height: auto;
+				min-height: 120px;
+				object-fit: contain;
+				display: block;
+				margin: 0;
+			}
+			@media (max-width: 900px) {
+				.responsive-train-img {
+					height: 120px;
+					min-height: unset;
+					object-fit: cover;
+				}
+			}
+			@media (max-width: 700px) {
+				body {
+					font-size: 0.95em;
+				}
+				.container {
+					padding: 0 4vw;
+				}
+				.title span {
+					font-size: 1.1em !important;
+				}
+				.red-rectangle h1.vollkorn {
+					font-size: 1.1em !important;
+				}
+				.red-rectangle h2.suwannaphum {
+					font-size: 1.3em !important;
+				}
+				.logbook-link span,
+				.logbook-link {
+					font-size: 1em !important;
+					padding: 0.5em 0.7em;
+				}
+			}
+			@media (max-width: 500px) {
+				.title span {
+					font-size: 1em !important;
+				}
+				.red-rectangle h1.vollkorn {
+					font-size: 1em !important;
+				}
+				.red-rectangle h2.suwannaphum {
+					font-size: 1em !important;
+				}
+				.logbook-link span,
+				.logbook-link {
+					font-size: 0.95em !important;
+				}
+			}
+		</style>
+		<img src="train-top.png" alt="Top image" class="responsive-train-img">
+	<div class="container" style="width:100vw; max-width:100vw; padding:0; margin:0;">
+		<div class="title" style="text-align:center; margin: 2em 0 2em 0;">
+			<span style="font-family: 'Roboto Slab', serif; font-weight:700;">ISRA SÜNBÜL 1GDM2</span>
+		</div>
+		<page>
+			<div class="red-rectangle" style="max-width:1100px; width:90vw; margin:0 auto;">
+				<h1 class="vollkorn" style="font-size:2em; text-align:center;">LOST IN TRA(I)NSLATION</h1>
+				<div style="position:relative; display:flex; align-items:center; justify-content:center; margin-top:40px; margin-bottom:40px;">
+					<a href="week11.html" id="arrow-link" style="display:inline-block; position:absolute; left:0; top:50%; transform:translateY(-50%);">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M38 24H10" stroke="#C1121F" stroke-width="4" stroke-linecap="round"/>
+							<path d="M20 14L10 24L20 34" stroke="#C1121F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+                    <!-- Zoek icoon rechts van WEEK 12 -->
+                    <button id="searchBtn" style="display:inline-block; position:absolute; right:0; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C1121F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="7"/>
+                            <line x1="16.5" y1="16.5" x2="21" y2="21"/>
+                        </svg>
+                    </button>
+					<a href="logboek.html" id="week12-link" style="text-decoration:none;">
+						<h2 class="suwannaphum" style="color:#000; font-size:2.5em; font-weight:bold; text-align:center; margin:0; transition:opacity 0.2s;">WEEK 12</h2>
+					</a>
+					<style>
+										#arrow-link svg { opacity: 1; transition: opacity 0.2s; }
+										#arrow-link:hover svg { opacity: 0.5; }
+										#searchBtn svg { opacity: 1; transition: opacity 0.2s; }
+										#searchBtn:hover svg { opacity: 0.5; }
+										#week12-link h2:hover {
+											opacity: 0.5;
+											cursor: pointer;
+										}
+					</style>
+				</div>
+				<p>
+				   <span class="suwannaphum">Dit was de laatste week. Ik voelde me ziek en ben thuisgebleven. Daarnaast was de oom van mijn vader overleden, wat ervoor zorgde dat mijn motivatie tijdelijk weg was. Na drie dagen uitzieken ben ik opnieuw aan de slag gegaan en ben ik beginnen onderzoeken hoe ik de Figma-schermen die ik voor deze opdracht had ontworpen, kon omzetten naar een werkende realiteit.</span>
+				<div class="two-columns">
+					<div class="column">
+						<p><span class="suwannaphum">Ik heb hiervoor verschillende video’s bekeken op YouTube, TikTok en Instagram. Uiteindelijk ben ik tot dit resultaat gekomen. De website is niet exact geworden zoals ik het oorspronkelijk voor ogen had, maar als beginner ben ik toch tevreden met het eindresultaat.</span>
+					</div>
+				</div>
+				<p><span class="suwannaphum">Tot slot zal ik tijdens de vakantie vooral studeren voor mijn andere examens, maar ik zal zeker ook af en toe tijd maken om nog verdere aanpassingen aan de borden door te voeren.</span></p>
+				<div style="width:100%; display:flex; flex-direction:column; gap:32px; margin:48px 0 0 0;">
+					<!-- Voeg hier week 12 afbeeldingen toe indien nodig -->
+				</div>
+				<div style="display:flex; justify-content:space-between; align-items:center; margin-top:60px; margin-bottom:60px;">
+					   <div style="flex:1;"></div>
+				</div>
+				<div style="width:100%; text-align:center; margin: 0 0 40px 0;">
+					<style>
+						.suwannaphum.back-home-btn {
+							transition: opacity 0.2s;
+						}
+						.suwannaphum.back-home-btn:hover {
+							opacity: 0.5;
+						}
+					</style>
+					<a href="index.html" class="suwannaphum back-home-btn" style="display:inline-block; background:#C1121F; color:#fff; font-family:'Suwannaphum', serif; font-size:1.2em; font-weight:bold; padding:0.7em 2em; border-radius:8px; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,0.08);">BACK HOME</a>
+				</div>
+			</div>
+		</page>
+	</div>
+	<img src="train-top.png" alt="Top image" class="responsive-train-img" style="transform: scaleX(-1); margin: 80px 0 60px 0;">
+</page>
+<!-- Modal voor week zoeken -->
+<div id="searchModal" style="display:none; position:fixed; z-index:10000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); justify-content:center; align-items:center;">
+	<div style="background:#fff; border-radius:18px; padding:32px 24px; min-width:300px; max-width:90vw; box-shadow:0 2px 32px 0 rgba(0,0,0,0.25); position:relative; font-family: 'Suwannaphum', serif;">
+		<button id="closeSearchModal" style="position:absolute; top:12px; right:18px; background:none; border:none; font-size:2em; color:#C1121F; cursor:pointer; font-family: inherit;">&times;</button>
+		<h3 style="margin-top:0; color:#C1121F; text-align:center; font-family: inherit;">Zoek een week</h3>
+		<input id="weekSearchInput" type="text" placeholder="Typ weeknummer..." style="width:100%; padding:8px 12px; border:1px solid #ccc; border-radius:8px; margin-bottom:16px; font-size:1.1em; font-family: inherit;">
+		<ul id="weekList" style="list-style:none; padding:0; margin:0; max-height:200px; overflow-y:auto; font-family: inherit;"></ul>
+	</div>
+	<style>
+		/* Zoekmodal week hover effect */
+		#weekList a {
+			transition: background 0.15s, color 0.15s;
+		}
+		#weekList a:hover {
+			background: #C1121F;
+			color: #FFFBF4 !important;
+			border-radius: 8px;
+		}
+	</style>
+</div>
+</page>
+<!-- Modal for enlarged image -->
+<div id="imgModal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
+	<span id="closeModal" style="position:absolute; top:40px; right:60px; color:white; font-size:3em; cursor:pointer; font-family:sans-serif;">&times;</span>
+	<img id="modalImg" src="" alt="Vergrote afbeelding" style="max-width:90vw; max-height:80vh; border-radius:18px; box-shadow:0 2px 32px 0 rgba(0,0,0,0.25);">
+</div>
+<script>
+			// Modal navigation logic
+			const images = Array.from(document.querySelectorAll('.enlargeable'));
+			let currentIndex = -1;
+			function showModal(index) {
+				if (index < 0 || index >= images.length) return;
+				currentIndex = index;
+				document.getElementById('modalImg').src = images[index].src;
+				document.getElementById('imgModal').style.display = 'flex';
+				updateArrowVisibility();
+			}
+			images.forEach((img, idx) => {
+				img.addEventListener('click', function() {
+					showModal(idx);
+				});
+			});
+			document.getElementById('closeModal').onclick = function() {
+				document.getElementById('imgModal').style.display = 'none';
+			};
+			document.getElementById('imgModal').onclick = function(e) {
+				if(e.target === this) this.style.display = 'none';
+			};
+		// Add left arrow for previous image
+		const leftArrow = document.createElement('span');
+		leftArrow.innerHTML = '&#8592;';
+		leftArrow.style.position = 'absolute';
+		leftArrow.style.top = '50%';
+		leftArrow.style.left = '40px';
+		leftArrow.style.transform = 'translateY(-50%)';
+		leftArrow.style.color = 'white';
+		leftArrow.style.fontSize = '3em';
+		leftArrow.style.cursor = 'pointer';
+		leftArrow.style.userSelect = 'none';
+		leftArrow.style.fontFamily = 'sans-serif';
+		leftArrow.style.zIndex = '10001';
+		leftArrow.style.display = 'none';
+		leftArrow.id = 'leftArrowModal';
+		document.getElementById('imgModal').appendChild(leftArrow);
+		// Update arrow visibility for both arrows
+		function updateArrowVisibility() {
+			rightArrow.style.display = images.length > 0 ? 'block' : 'none';
+			leftArrow.style.display = images.length > 0 ? 'block' : 'none';
+		}
+		leftArrow.onclick = function(e) {
+			e.stopPropagation();
+			if (images.length === 0) return;
+			if (currentIndex > 0) {
+				showModal(currentIndex - 1);
+			} else {
+				showModal(images.length - 1); // Loop to last image
+			}
+			updateArrowVisibility();
+		};
+	// Add right arrow for next image
+	const rightArrow = document.createElement('span');
+	rightArrow.innerHTML = '&#8594;';
+	rightArrow.style.position = 'absolute';
+	rightArrow.style.top = '50%';
+	rightArrow.style.right = '40px';
+	rightArrow.style.transform = 'translateY(-50%)';
+	rightArrow.style.color = 'white';
+	rightArrow.style.fontSize = '3em';
+	rightArrow.style.cursor = 'pointer';
+	rightArrow.style.userSelect = 'none';
+	rightArrow.style.fontFamily = 'sans-serif';
+	rightArrow.style.zIndex = '10001';
+	rightArrow.style.display = 'none';
+	rightArrow.id = 'rightArrowModal';
+	document.getElementById('imgModal').appendChild(rightArrow);
+	function updateArrowVisibility() {
+		rightArrow.style.display = (currentIndex >= 0 && currentIndex < images.length - 1) ? 'block' : 'none';
+	}
+	rightArrow.onclick = function(e) {
+		e.stopPropagation();
+		if (currentIndex < images.length - 1) {
+			showModal(currentIndex + 1);
+			updateArrowVisibility();
+		}
+	};
+	document.getElementById('imgModal').addEventListener('show', updateArrowVisibility);
+	// Show arrow when modal opens
+	const origShowModal = showModal;
+	showModal = function(index) {
+		origShowModal(index);
+		updateArrowVisibility();
+	};
+</script>
+		<footer style="width:100%; text-align:center; margin:40px 0 0 0; padding:10px 0; background:#C1121F; color:#F5EEE3; font-family:'Suwannaphum', serif; font-size:1.1em; border-radius:10px 10px 10px 10px; box-shadow:0 -2px 8px rgba(0,0,0,0.04);">
+			<div style="display:flex; justify-content:center; align-items:center; gap:10px; flex-wrap:wrap;">
+				<span><b>&copy; 2026 Isra Sünbül.</b> </span>
+								   <a href="https://github.com/s169069/GithubCodes_IsraS-nb-l1GDM2" target="_blank" style="color:#F5EEE3; text-decoration:none; font-weight:bold; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.5'" onmouseout="this.style.opacity='1'">Github Repository</a>
+				<span>|</span>
+				<a href="Lost in Tra(i)nslation_IsraSünbül_1GDM2.pdf" target="_blank" class="suwannaphum" style="color:#F5EEE3; font-size:1.1em; font-weight:bold; text-decoration:none; font-family:'Suwannaphum', serif; padding:0; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.5'" onmouseout="this.style.opacity='1'">Ontwerpsdocumentatie</a>
+				<span>|</span>
+				<a href="https://www.figma.com/design/tyDwWi3G5t092runCms794/3-schermen_S%C3%BCnb%C3%BClIsra_1GDM2?node-id=285-2008&m=dev&t=RUBwc86tJiSGfTnV-1" target="_blank" class="suwannaphum" style="color:#F5EEE3; font-size:1.1em; font-weight:bold; text-decoration:none; font-family:'Suwannaphum', serif; padding:0; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.5'" onmouseout="this.style.opacity='1'">Figma</a>
+			</div>
+		</footer>
+</body>
+<script>
+// Zoek modal functionaliteit
+const weekPages = [
+	{ num: 1, file: 'week1.html' },
+	{ num: 2, file: 'week2.html' },
+	{ num: 3, file: 'week3.html' },
+	{ num: 4, file: 'week4.html' },
+	{ num: 5, file: 'week5.html' },
+	{ num: 6, file: 'week6.html' },
+	{ num: 7, file: 'week7.html' },
+	{ num: 8, file: 'week8.html' },
+	{ num: 9, file: 'week9.html' },
+	{ num: 10, file: 'week10.html' },
+	{ num: 11, file: 'week11.html' },
+	{ num: 12, file: 'week12.html' }
+];
+const searchBtn = document.getElementById('searchBtn');
+const searchModal = document.getElementById('searchModal');
+const closeSearchModal = document.getElementById('closeSearchModal');
+const weekList = document.getElementById('weekList');
+const weekSearchInput = document.getElementById('weekSearchInput');
+
+searchBtn.onclick = () => {
+	searchModal.style.display = 'flex';
+	weekSearchInput.value = '';
+	renderWeekList('');
+	weekSearchInput.focus();
+};
+closeSearchModal.onclick = () => {
+	searchModal.style.display = 'none';
+};
+searchModal.onclick = (e) => {
+	if (e.target === searchModal) searchModal.style.display = 'none';
+};
+function renderWeekList(filter) {
+	weekList.innerHTML = '';
+	weekPages.filter(w => filter === '' || (`week ${w.num}`).toLowerCase().includes(filter.toLowerCase()) || `${w.num}`.includes(filter)).forEach(w => {
+		const li = document.createElement('li');
+		li.innerHTML = `<a href="${w.file}" style="display:block; padding:8px 0; color:#C1121F; text-decoration:none; font-size:1.1em; font-family: 'Suwannaphum', serif; text-align:center; font-weight:bold; text-transform:uppercase; letter-spacing:0.04em;">Week ${w.num}</a>`;
+		weekList.appendChild(li);
+	});
+}
+weekSearchInput.oninput = (e) => {
+	renderWeekList(e.target.value);
+};
+// Enter op input = eerste resultaat openen
+weekSearchInput.addEventListener('keydown', function(e) {
+	if (e.key === 'Enter') {
+		const first = weekList.querySelector('a');
+		if (first) first.click();
+	}
+});
+</script>
+</html>

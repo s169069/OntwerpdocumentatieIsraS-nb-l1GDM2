@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/flexboxes.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/typography.css">
+    <!-- Google Fonts: Roboto Slab -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Suwannaphum -->
+    <link href="https://fonts.googleapis.com/css2?family=Suwannaphum:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- GitHub Repository Link -->
+    <div style="position:fixed;top:10px;right:10px;z-index:9999;background:#fff;padding:6px 12px;border-radius:6px;box-shadow:0 2px 8px #0002;font-size:1em;">
+        <a href="https://github.com/s169069/GithubCodes_IsraS-nb-l1GDM2" target="_blank" rel="noopener noreferrer" style="color:#24292f;text-decoration:none;font-weight:bold;">
+            View on GitHub
+        </a>
+    </div>
+        <style>
+            body, .container, .title, .red-rectangle, h1, h2, p, .column, .logbook-link {
+                font-family: Arial, Helvetica, sans-serif !important;
+            }
+        </style>
+        <style>
+            .responsive-train-img {
+                width: 100vw;
+                height: auto;
+                min-height: 120px;
+                object-fit: contain;
+                display: block;
+                margin: 0;
+            }
+            @media (max-width: 900px) {
+                .responsive-train-img {
+                    height: 120px;
+                    min-height: unset;
+                    object-fit: cover;
+                }
+            }
+            @media (max-width: 700px) {
+                body {
+                    font-size: 0.95em;
+                }
+                .container {
+                    padding: 0 4vw;
+                }
+                .title span {
+                    font-size: 1.1em !important;
+                }
+                .red-rectangle h1.vollkorn {
+                    font-size: 1.1em !important;
+                }
+                .red-rectangle h2.suwannaphum {
+                    font-size: 1.3em !important;
+                }
+                .logbook-link span,
+                .logbook-link {
+                    font-size: 1em !important;
+                    padding: 0.5em 0.7em;
+                }
+            }
+            @media (max-width: 500px) {
+                .title span {
+                    font-size: 1em !important;
+                }
+                .red-rectangle h1.vollkorn {
+                    font-size: 1em !important;
+                }
+                .red-rectangle h2.suwannaphum {
+                    font-size: 1em !important;
+                }
+                .logbook-link span,
+                .logbook-link {
+                    font-size: 0.95em !important;
+                }
+            }
+        </style>
+        <img src="train-top.png" alt="Top image" class="responsive-train-img">
+    <div class="container" style="width:100vw; max-width:100vw; padding:0; margin:0;">
+        <div class="title" style="text-align:center; margin: 2em 0 2em 0;">
+            <span style="font-family: 'Roboto Slab', serif; font-weight:700;">ISRA SÜNBÜL 1GDM2</span>
+        </div>
+        <page>
+            <div class="red-rectangle" style="max-width:1100px; width:90vw; margin:0 auto;">
+                <div style="padding-bottom:60px;">
+                    <h1 class="vollkorn" style="font-size:2em; text-align:center;">LOST IN TRA(I)NSLATION</h1>
+                    <h2 class="suwannaphum" style="margin-top:40px; margin-bottom:40px; font-size:2.5em;">WELKOM AAN BOORD!</h2>
+                    <p>
+                       <span class="suwannaphum">In deze opdracht stond het ontwerpen en ontwikkelen van digitale treinborden centraal. Het doel was om stap voor stap kennis te maken met verschillende ontwerp- en prototyping-tools, zoals Figma, en deze uiteindelijk om te zetten naar werkende webpagina’s met HTML en CSS.</span>
+                    <div class="two-columns">
+                        <div class="column">
+                            <p><span class="suwannaphum">Gedurende 12 weken hebben we geleerd hoe we low-fidelity prototypes kunnen maken, deze kunnen uitbreiden naar mid-fidelity en uiteindelijk digitale versies in Visual Studio Code kunnen bouwen. Ook hebben we gewerkt met tools zoals ChatGPT, GitHub en Netlify om het ontwikkelproces te ondersteunen.</span>
+                        </div>
+                        <div class="column">
+                                    <p><span class="suwannaphum">In dit logboek beschrijf ik mijn voortgang per week: van de eerste schetsen tot de uitdagingen en oplossingen bij het coderen van de treinborden. Het laat zien hoe ik stap voor stap mijn ontwerpideeën heb omgezet naar een functioneel en interactief resultaat.</span>
+                        </div>
+                    </div>
+                    <a href="logboek.html" class="logbook-link suwannaphum" style="display:block; margin-bottom:60px; text-align:right;"><span class="suwannaphum">NAAR LOGBOEK →</span></a>
+                    <footer style="width:100%; text-align:center; margin:40px 0 0 0; padding:10px 0; background:#C1121F; color:#F5EEE3; font-family:'Suwannaphum', serif; font-size:1.1em; border-radius:10px 10px 10px 10px; box-shadow:0 -2px 8px rgba(0,0,0,0.04);">
+                            <div style="display:flex; justify-content:center; align-items:center; gap:10px; flex-wrap:wrap;">
+                                <span><b>&copy; 2026 Isra Sünbül.</b> </span>
+                                <a href="https://github.com/s169069/GithubCodes_IsraS-nb-l1GDM2" target="_blank" style="color:#F5EEE3; text-decoration:none; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.5'" onmouseout="this.style.opacity='1'">Github Repository</a>
+                                <span>|</span>
+                                <a href="Lost in Tra(i)nslation_IsraSünbül_1GDM2.pdf" target="_blank" class="suwannaphum" style="color:#F5EEE3; font-size:1.1em; font-weight:bold; text-decoration:none; font-family:'Suwannaphum', serif; padding:0; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.5'" onmouseout="this.style.opacity='1'">Ontwerpsdocumentatie</a>
+                                <span>|</span>
+                                <a href="https://www.figma.com/design/tyDwWi3G5t092runCms794/3-schermen_S%C3%BCnb%C3%BClIsra_1GDM2?node-id=285-2008&m=dev&t=RUBwc86tJiSGfTnV-1" target="_blank" class="suwannaphum" style="color:#F5EEE3; font-size:1.1em; font-weight:bold; text-decoration:none; font-family:'Suwannaphum', serif; padding:0; transition:opacity 0.2s;" onmouseover="this.style.opacity='0.5'" onmouseout="this.style.opacity='1'">Figma</a>
+                            </div>
+                    </footer>
+                </div>
+            </div>
+        </page>
+    </div>
+    <img src="train-top.png" alt="Top image" class="responsive-train-img" style="transform: scaleX(-1); margin: 80px 0 60px 0;">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+        <!-- No script needed for direct PDF link -->
+</html>

@@ -1,0 +1,14 @@
+.two-columns {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 20px; */
+}
+
+.column {
+    /* flex: 1; */
+    margin-bottom: 20px;
+}
+
+.two-columns p {
+  text-align: justify;
+}

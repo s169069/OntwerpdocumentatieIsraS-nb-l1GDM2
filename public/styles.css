@@ -1,0 +1,170 @@
+/* Vollkorn font for headings */
+.vollkorn {
+  font-family: 'Vollkorn', serif !important;
+  font-weight: 700;
+}
+/* Suwannaphum font for title */
+.suwannaphum {
+  font-family: 'Suwannaphum', serif !important;
+  font-weight: 700;
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 969px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    font-size: 2.5em;
+  }
+  .red-rectangle h1 {
+    font-size: 2.5em !important;
+  }
+  .week-grid li a {
+    font-size: 1.5em;
+    padding: 24px 0;
+  }
+  .week-grid li img {
+    width: 320px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 969px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFBF4;
+  color: #161717;
+  min-height: 100vh;
+  font-size: 1.25rem;
+}
+
+.container {
+  max-width: 70vw;
+  margin: 20px auto 0;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.bottom-image {
+  margin-top: -150px;
+  margin-bottom: 1000px;
+}
+p {
+  text-align: justify;
+}
+
+img {
+  margin: 20px 0;
+}
+
+h1 {
+  margin-top: 60px;
+}
+
+.logbook-link {
+  color: #C1121F;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.logbook-link:hover {
+  opacity: 0.5;
+}
+
+.red-rectangle {
+  background-color: #F5EEE3;
+  border-radius: 30px;
+  padding: 20px 5vw;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.red-rectangle h1 {
+  font-weight: 400;
+}
+
+.week-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 20px;
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 40px 0;
+  justify-items: start;
+}
+
+.week-grid li {
+  position: relative;
+  z-index: 1;
+}
+
+.week-grid li:nth-child(even) {
+  justify-self: end;
+}
+
+.week-grid li a {
+  display: block;
+  padding: 16px 0;
+  background: #F5EEE3;
+    color: #C1121F;
+    font-family: 'Suwannaphum', serif;
+    font-weight: 700;
+  font-size: 1.5em;
+  text-align: left;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  text-transform: uppercase;
+}
+
+
+.week-label {
+  transition: opacity 0.2s;
+}
+.week-grid li:hover .week-label {
+  opacity: 0.5;
+}
+
+
+.week-grid li img {
+  display: block;
+  margin-bottom: 0;
+  width: 240px;
+  height: auto;
+  object-fit: contain;
+  transition: none;
+  position: relative;
+  z-index: 2;
+  content: url('mouse_leave.png');
+}
+
+.week-grid li:hover img {
+  content: url('hovering.png');
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+    margin: 20px auto 0;
+  }
+  .red-rectangle {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
